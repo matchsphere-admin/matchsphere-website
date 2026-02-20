@@ -9,14 +9,14 @@ export default function DeleteAccountPage() {
       <div className="space-y-6 text-slate-700">
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-slate-900">Delete your account in the app</h2>
-          <p>You can delete your account directly from the Matcha app:</p>
+          <p>Deletion is performed in the app; this page explains how.</p>
           <ol className="list-decimal space-y-1 pl-5">
             <li>Open Matcha</li>
             <li>
-              Go to <strong>Settings</strong>
+              Open <strong>Profile Menu</strong>
             </li>
             <li>
-              Select <strong>Account</strong> (or <strong>Privacy</strong>)
+              Go to <strong>Settings</strong>
             </li>
             <li>
               Tap <strong>Delete Account</strong> and follow the prompts

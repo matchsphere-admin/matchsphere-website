@@ -32,7 +32,7 @@ npm run start
 - `/terms-of-use`
 - `/delete-account`
 - `/about` (placeholder)
-- `/contact` (placeholder)
+- `/contact`
 - `/support` (placeholder)
 
 ## Environment
@@ -41,7 +41,21 @@ Use `.env.local`:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://matchsphere.ai
+RESEND_API_KEY=your_resend_api_key
+CONTACT_TO_EMAIL=support@matchsphere.ai
+CONTACT_FROM_EMAIL=noreply@matchsphere.ai
 ```
+
+### Contact Form Setup (Resend)
+
+The `/contact` page posts to `/api/contact`, which sends email through Resend.
+
+Before using it in production:
+
+1. Verify `matchsphere.ai` in Resend.
+2. Add required DNS records (SPF/DKIM) in your DNS provider.
+3. Configure the same environment variables in Vercel project settings.
+4. Redeploy.
 
 ## Assets
 
