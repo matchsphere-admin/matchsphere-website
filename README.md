@@ -32,7 +32,7 @@ npm run start
 - `/terms-of-use`
 - `/delete-account`
 - `/about` (placeholder)
-- `/contact`
+- `/contact` (placeholder)
 - `/support` (placeholder)
 
 ## Environment
@@ -48,7 +48,8 @@ CONTACT_FROM_EMAIL=noreply@matchsphere.ai
 
 ### Contact Form Setup (Resend)
 
-The `/contact` page posts to `/api/contact`, which sends email through Resend.
+The `/contact` placeholder page posts to `/api/contact`.
+This website is hosted on Vercel, and contact emails are sent through Resend.
 
 Before using it in production:
 
@@ -66,7 +67,7 @@ Logo files are reused from frontend and copied into:
 
 ## Deployment
 
-Primary deployment target is Vercel (Hobby/Pro depending on account constraints).
+This site is hosted on Vercel (Hobby/Pro depending on account constraints).
 
 Custom domain setup:
 
