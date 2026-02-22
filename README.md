@@ -24,16 +24,21 @@ npm run build
 npm run start
 ```
 
-## Routes (Phase 1)
+## Routes (MVP)
 
 - `/`
 - `/matcha`
 - `/privacy-policy`
 - `/terms-of-use`
 - `/delete-account`
+- `/contact`
 - `/about` (placeholder)
-- `/contact` (placeholder)
 - `/support` (placeholder)
+
+Current MVP status:
+- Done: `/contact`, `/privacy-policy`, `/terms-of-use`, `/delete-account`
+- In progress: `/`, `/matcha`
+- Placeholder: `/about`, `/support`
 
 ## Environment
 
