@@ -76,11 +76,12 @@ const sections = [
       "Enable user-to-user messaging and deliver messages to recipients",
       "Communicate with you about your account and the App",
       "Ensure safety, prevent fraud/abuse, and enforce our policies/Terms",
+      "Process user reports and conduct moderation reviews to enforce our Community Guidelines",
       "Comply with legal obligations",
       "Analyze performance and improve reliability, security, and user experience",
     ],
     trailingParagraph:
-      "We may aggregate or de-identify information (so it no longer identifies you) and use it for analytics and service improvement.",
+      "We may aggregate or de-identify information (so it no longer identifies you) and use it for analytics and service improvement. When you submit a report about another user, we process the report content and may review relevant account data and communications to investigate potential violations. Report information may be shared with law enforcement when required by law or necessary to protect user safety.",
   },
   {
     title: "4. AI Processing",

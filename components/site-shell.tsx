@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/matcha", label: "Matcha" },
+  { href: "/safety", label: "Safety" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms-of-use", label: "Terms of Use" },
   { href: "/delete-account", label: "Delete Account" },

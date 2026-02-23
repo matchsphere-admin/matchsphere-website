@@ -82,7 +82,7 @@ const sections = [
     title: "10. Moderation and Enforcement",
     paragraphs: [
       "We may (but are not required to) monitor, review, or remove Content, and we may restrict features, suspend, or terminate accounts if we believe Content or behavior violates these Terms, violates applicable law, or creates risk or harm to users or the App.",
-      "You can report accounts or Content through in-app tools (if available) or by contacting support@matchsphere.ai.",
+      "The App provides Block and Report features. You can block users to prevent them from contacting you or appearing in your recommendations. You can report accounts or Content that violate our Community Guidelines through the in-app Report feature or by contacting support@matchsphere.ai. For details on our Community Guidelines and safety features, visit our Safety page at matchsphere.ai/safety.",
     ],
   },
   {
