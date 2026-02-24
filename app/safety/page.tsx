@@ -345,12 +345,6 @@ export default function SafetyPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <section className="space-y-1 text-slate-600 pt-6 border-t border-slate-200">
-          <p>MatchSphere Technologies FZ-LLC</p>
-          <p>Dubai, United Arab Emirates</p>
-          <p>Email: support@matchsphere.ai</p>
-        </section>
       </article>
     </SiteShell>
   );

@@ -54,8 +54,7 @@ export function SiteShell({
               </Link>
             ))}
           </div>
-          <p>MatchSphere Technologies FZ-LLC, Dubai, United Arab Emirates.</p>
-          <p>Email: support@matchsphere.ai</p>
+          <p>© 2026 MatchSphere Technologies FZ-LLC</p>
         </div>
       </footer>
     </div>

@@ -4,7 +4,8 @@ const sections = [
   {
     title: "1. Introduction",
     paragraphs: [
-      'MatchSphere Technologies FZ-LLC ("we", "us", "our") operates the Matcha mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and protect personal information.',
+      'For users in the UAE and GCC, MatchSphere Technologies FZ-LLC ("we", "us", "our") operates the Matcha mobile application (the "App") and acts as the primary data controller for personal information processed in connection with the App.',
+      "Match Sphere LLC (Delaware, United States) is our parent company and may support app publishing/distribution, administration, technology, and support operations. This Privacy Policy explains how we collect, use, disclose, and protect personal information.",
       "We are committed to protecting your privacy and securing your personal data in accordance with applicable data protection laws, including UAE data protection regulations.",
     ],
   },
@@ -97,6 +98,7 @@ const sections = [
     bullets: [
       "Other users: information you choose to share via your profile, and messages you send to another user are shared with the recipient",
       "Service providers: hosting, analytics, customer support, authentication, security, and AI processing providers who process data on our instructions",
+      "Affiliates: entities within the MatchSphere group, including Match Sphere LLC, for app publishing, operational support, security, analytics, and administration on a need-to-know basis",
       "Legal and safety: law enforcement or regulators when required by law, and where necessary to protect users, investigate abuse, or enforce our Terms",
       "Business transfers: if we are involved in a merger, acquisition, restructuring, or sale of assets, personal information may be transferred as part of that transaction",
     ],
@@ -185,8 +187,6 @@ export default function PrivacyPolicyPage() {
           </section>
         ))}
         <section className="space-y-1 text-slate-600">
-          <p>MatchSphere Technologies FZ-LLC</p>
-          <p>Dubai, United Arab Emirates</p>
           <p>Email: support@matchsphere.ai</p>
         </section>
       </article>

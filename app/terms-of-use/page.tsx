@@ -5,7 +5,8 @@ const sections = [
     title: "1. Acceptance of Terms",
     paragraphs: [
       'By accessing or using the Matcha mobile application (the "App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, do not use the App.',
-      'Matcha is operated by MatchSphere Technologies FZ-LLC, a company registered in Dubai, United Arab Emirates ("MatchSphere", "we", "us", "our").',
+      'Matcha is operated in the United Arab Emirates and GCC by MatchSphere Technologies FZ-LLC, a company registered in Dubai, United Arab Emirates ("UAE Operator"). Match Sphere LLC (Delaware, United States) is our parent company and may publish or distribute the App through app stores and provide administrative, technology, and support services. In these Terms, "MatchSphere", "we", "us", and "our" mean MatchSphere Technologies FZ-LLC and, where relevant, its affiliates (including Match Sphere LLC).',
+      "These Terms are between you and MatchSphere Technologies FZ-LLC.",
     ],
   },
   {
@@ -89,6 +90,7 @@ const sections = [
     title: "11. Third-Party Services",
     paragraphs: [
       "The App may rely on third-party services (for example hosting, analytics, authentication, and AI processing). Third-party services are governed by their own terms and policies, and we are not responsible for third-party services.",
+      "We may use affiliated entities, including Match Sphere LLC, to support app distribution, operations, and service delivery. This does not change the operating entity and contracting party stated in these Terms unless expressly specified.",
     ],
   },
   {
@@ -176,8 +178,6 @@ export default function TermsOfUsePage() {
           </section>
         ))}
         <section className="space-y-1 text-slate-600">
-          <p>MatchSphere Technologies FZ-LLC</p>
-          <p>Dubai, United Arab Emirates</p>
           <p>Email: support@matchsphere.ai</p>
         </section>
       </article>
