@@ -6,27 +6,47 @@ const screenshots = [
   {
     src: "/images/matcha/auth-screen.png",
     alt: "Matcha authentication screen",
-    label: "AI-guided onboarding",
+    label: "Secure onboarding",
   },
   {
     src: "/images/matcha/recommendations.png",
     alt: "Matcha recommendations feed",
-    label: "Structured recommendations",
+    label: "Compatibility-focused recommendations",
+  },
+  {
+    src: "/images/matcha/couple-profile.png",
+    alt: "Matcha couple profile screen",
+    label: "Rich and structured profiles",
   },
   {
     src: "/images/matcha/recommender-chat.png",
     alt: "Matcha recommendation chat",
-    label: "Intentional conversation flow",
+    label: "Guided conversations",
   },
   {
-    src: "/images/matcha/couple-profile.png",
-    alt: "Matcha couple profile",
-    label: "Private profile structure",
+    src: "/images/matcha/couple-interview-chat.png",
+    alt: "Matcha interview chat flow",
+    label: "AI-guided interview flow",
   },
   {
     src: "/images/matcha/image-moderation.png",
-    alt: "Matcha moderation tools",
+    alt: "Matcha image moderation screen",
     label: "Safety and moderation systems",
+  },
+  {
+    src: "/images/matcha/inscreen-quick-feedback.png",
+    alt: "Matcha quick feedback interface",
+    label: "Fast in-app feedback",
+  },
+  {
+    src: "/images/matcha/menu-sidebar.png",
+    alt: "Matcha menu sidebar",
+    label: "Simple account controls",
+  },
+  {
+    src: "/images/matcha/switch-profiles.png",
+    alt: "Matcha profile switching screen",
+    label: "Flexible profile management",
   },
 ];
 
