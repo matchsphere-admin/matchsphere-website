@@ -9,6 +9,11 @@ const screenshots = [
     label: "Secure onboarding",
   },
   {
+    src: "/images/matcha/onboarding-mode-selection.png",
+    alt: "Onboarding screen with dating, individual friendship, couple friendship, and profile exploration options",
+    label: "Choose dating, friendship, couple friendship, or profile exploration",
+  },
+  {
     src: "/images/matcha/recommendations.png",
     alt: "Matcha recommendations feed",
     label: "Compatibility-focused recommendations",
@@ -17,6 +22,11 @@ const screenshots = [
     src: "/images/matcha/couple-profile.png",
     alt: "Matcha couple profile screen",
     label: "Rich and structured profiles",
+  },
+  {
+    src: "/images/matcha/profile-image-gallery-authenticity.png",
+    alt: "Profile image and gallery photos showing the same person for trust and authenticity",
+    label: "Profile and gallery photos aligned for trust and authenticity",
   },
   {
     src: "/images/matcha/recommender-chat.png",
