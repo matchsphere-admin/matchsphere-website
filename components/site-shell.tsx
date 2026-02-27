@@ -63,7 +63,7 @@ export function SiteShell({
               </Link>
             ))}
           </div>
-          <p>© 2026 MatchSphere Technologies FZ-LLC</p>
+          <p>@ 2026 Match Sphere LLC</p>
         </div>
       </footer>
     </div>
