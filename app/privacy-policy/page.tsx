@@ -51,7 +51,6 @@ const sections = [
         heading: "Location Information",
         bullets: [
           "Location you provide in the App (e.g., city/region)",
-          "If you enable device location permissions, we may process more precise location information to support App features (you can disable this in your device settings)",
         ],
       },
       {
