@@ -89,7 +89,7 @@ const sections = [
   {
     title: "11. Third-Party Services",
     paragraphs: [
-      "The App may rely on third-party services (for example hosting, analytics, authentication, and AI processing). Third-party services are governed by their own terms and policies, and we are not responsible for third-party services.",
+      "The App may rely on third-party services (for example hosting, authentication, communications, and AI processing). Third-party services are governed by their own terms and policies, and we are not responsible for third-party services.",
       "We may use affiliated entities, including Match Sphere LLC, to support app distribution, operations, and service delivery. This does not change the operating entity and contracting party stated in these Terms unless expressly specified.",
     ],
   },

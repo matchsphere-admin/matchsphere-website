@@ -62,7 +62,7 @@ const sections = [
       {
         heading: "Cookies and Similar Technologies (Website)",
         bullets: [
-          "If you visit our website, it may use cookies or similar technologies for basic functionality and analytics (where enabled)",
+          "If you visit our website, it may use cookies or similar technologies for basic functionality",
         ],
       },
     ],
@@ -81,7 +81,7 @@ const sections = [
       "Analyze performance and improve reliability, security, and user experience",
     ],
     trailingParagraph:
-      "We may aggregate or de-identify information (so it no longer identifies you) and use it for analytics and service improvement. When you submit a report about another user, we process the report content and may review relevant account data and communications to investigate potential violations. Report information may be shared with law enforcement when required by law or necessary to protect user safety.",
+      "We may aggregate or de-identify information (so it no longer identifies you) and use it for service improvement. When you submit a report about another user, we process the report content and may review relevant account data and communications to investigate potential violations. Report information may be shared with law enforcement when required by law or necessary to protect user safety.",
   },
   {
     title: "4. AI Processing",
@@ -96,8 +96,8 @@ const sections = [
     paragraphs: ["We may share personal information with:"],
     bullets: [
       "Other users: information you choose to share via your profile, and messages you send to another user are shared with the recipient",
-      "Service providers: hosting, analytics, customer support, authentication, security, and AI processing providers who process data on our instructions",
-      "Affiliates: entities within the MatchSphere group, including Match Sphere LLC, for app publishing, operational support, security, analytics, and administration on a need-to-know basis",
+      "Service providers: hosting, customer support, authentication, security, communications (such as email delivery), and AI processing providers who process data on our instructions",
+      "Affiliates: entities within the MatchSphere group, including Match Sphere LLC, for app publishing, operational support, security, and administration on a need-to-know basis",
       "Legal and safety: law enforcement or regulators when required by law, and where necessary to protect users, investigate abuse, or enforce our Terms",
       "Business transfers: if we are involved in a merger, acquisition, restructuring, or sale of assets, personal information may be transferred as part of that transaction",
     ],
