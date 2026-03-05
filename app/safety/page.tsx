@@ -296,6 +296,53 @@ export default function SafetyPage() {
           </div>
         </section>
 
+        {/* Child Safety Standards */}
+        <section id="child-safety-standards" className="space-y-4">
+          <h2 className="text-2xl font-bold text-slate-900">
+            Child Safety Standards (CSAE/CSAM)
+          </h2>
+          <p>
+            Matcha has zero tolerance for child sexual abuse
+            and exploitation (CSAE) and child sexual abuse material (CSAM). We
+            prohibit any content or behavior that sexually exploits, abuses, or
+            endangers minors.
+          </p>
+          <div className="rounded-lg border border-slate-200 p-6 space-y-4">
+            <div>
+              <h3 className="font-semibold text-slate-900">
+                Published Standards
+              </h3>
+              <p className="text-sm">
+                CSAE/CSAM, grooming, sextortion, trafficking, and any sexualized
+                interactions involving minors are strictly prohibited on Matcha.
+                Accounts involved in these behaviors are subject to immediate
+                enforcement action, including permanent removal.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-900">
+                In-App Reporting and Feedback
+              </h3>
+              <p className="text-sm">
+                Users can report concerning profiles, messages, and behavior
+                directly in the app using the Report feature. We review reports
+                promptly and prioritize potential child safety violations.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-900">
+                CSAM Response and Legal Compliance
+              </h3>
+              <p className="text-sm">
+                When we become aware of suspected CSAM, we take appropriate
+                action in line with our policies and applicable law, including
+                content removal, account enforcement, and reporting to regional
+                or national authorities where required.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Resources & Contact */}
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-slate-900">
