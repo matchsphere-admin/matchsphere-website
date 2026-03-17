@@ -12,6 +12,7 @@ type WaitlistPayload = {
   interestedProfileTypes?: string[];
   nationality?: string;
   culturalBackground?: string;
+  timezone?: string; // Client's local timezone (IANA format)
   company?: string; // Honeypot field: should stay empty
 };
 
@@ -41,6 +42,7 @@ export async function POST(request: NextRequest) {
   const interestedProfileTypes = Array.isArray(payload.interestedProfileTypes) ? payload.interestedProfileTypes : undefined;
   const nationality = clean(payload.nationality);
   const culturalBackground = clean(payload.culturalBackground);
+  const timezone = clean(payload.timezone) || "UTC";
   const company = clean(payload.company);
 
   // Honeypot spam trap - silently accept but don't process
@@ -86,7 +88,7 @@ export async function POST(request: NextRequest) {
     interestedProfileTypes: interestedProfileTypes?.length ? interestedProfileTypes : undefined,
     nationality: nationality || undefined,
     culturalBackground: culturalBackground || undefined,
-    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    timezone,
     source: "website",
     deviceInfo: {
       platform: "web",

@@ -83,6 +83,9 @@ export function WaitlistForm() {
     setSuccessMessage("");
     setIsSubmitting(true);
 
+    // Get client's local timezone
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
     try {
       const response = await fetch("/api/waitlist", {
         method: "POST",
@@ -90,6 +93,7 @@ export function WaitlistForm() {
         body: JSON.stringify({
           ...form,
           age: form.age ? parseInt(form.age, 10) : undefined,
+          timezone,
         }),
       });
 
