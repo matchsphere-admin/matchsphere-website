@@ -137,12 +137,12 @@ export default function HomePage() {
 
       <section className="mt-8 grid gap-4 rounded-2xl border border-slate-200 p-6 sm:grid-cols-3">
         <div>
-          <h2 className="text-lg font-semibold text-slate-900">Join Early Access</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Join the Waitlist</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Matcha is currently in private testing. Reach out if you want to follow launch updates.
+            Matcha is currently in private testing. Join the waitlist to get early access.
           </p>
-          <Link href="/contact" className="mt-3 inline-block text-sm text-brand-700 hover:text-brand-900">
-            Request access
+          <Link href="/waitlist" className="mt-3 inline-block text-sm text-brand-700 hover:text-brand-900">
+            Join waitlist →
           </Link>
         </div>
         <div>

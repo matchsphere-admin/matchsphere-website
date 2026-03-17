@@ -67,6 +67,24 @@ export default function MatchaPage() {
       subtitle="An AI-powered matchmaking application built to move beyond superficial swiping and support deeper compatibility."
     >
       <div className="space-y-8 text-slate-700">
+        {/* Waitlist Banner */}
+        <section className="rounded-2xl bg-gradient-to-r from-[#5D8A4A] to-[#4A7039] p-6 text-white">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <div>
+              <h2 className="text-xl font-semibold">Join the Matcha Waitlist</h2>
+              <p className="mt-1 text-sm text-white/90">
+                Be among the first to experience AI-native matchmaking. Currently launching in Dubai.
+              </p>
+            </div>
+            <Link
+              href="/waitlist"
+              className="shrink-0 rounded-lg bg-white px-6 py-2.5 text-sm font-medium text-[#5D8A4A] transition hover:bg-white/90"
+            >
+              Join Waitlist →
+            </Link>
+          </div>
+        </section>
+
         <section>
           <AppScreenshotCarousel screenshots={screenshots} />
         </section>
