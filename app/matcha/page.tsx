@@ -67,21 +67,31 @@ export default function MatchaPage() {
       subtitle="An AI-powered matchmaking application built to move beyond superficial swiping and support deeper compatibility."
     >
       <div className="space-y-8 text-slate-700">
-        {/* Waitlist Banner */}
-        <section className="rounded-2xl bg-gradient-to-r from-[#5D8A4A] to-[#4A7039] p-6 text-white">
+        {/* Try Matcha Banner */}
+        <section className="rounded-2xl border-2 border-[#5D8A4A] bg-[#E8F0E4] p-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <div>
-              <h2 className="text-xl font-semibold">Join the Matcha Waitlist</h2>
-              <p className="mt-1 text-sm text-white/90">
-                Be among the first to experience AI-native matchmaking. Currently launching in Dubai.
+              <h2 className="text-xl font-semibold text-slate-900">Try Matcha Today</h2>
+              <p className="mt-1 text-sm text-slate-600">
+                Experience AI-native matchmaking. Now available as a web app. Native apps coming soon.
               </p>
             </div>
-            <Link
-              href="/waitlist"
-              className="shrink-0 rounded-lg bg-white px-6 py-2.5 text-sm font-medium text-[#5D8A4A] transition hover:bg-white/90"
-            >
-              Join Waitlist →
-            </Link>
+            <div className="flex shrink-0 gap-3">
+              <a
+                href="https://matcha.matchsphere.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg bg-[#5D8A4A] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-[#4A7039]"
+              >
+                Try Matcha Web →
+              </a>
+              <Link
+                href="/waitlist"
+                className="rounded-lg border border-[#5D8A4A] bg-white px-6 py-2.5 text-sm font-medium text-[#5D8A4A] transition hover:bg-[#F5F9F3]"
+              >
+                Join Waitlist
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -119,7 +129,18 @@ export default function MatchaPage() {
 
         <section className="rounded-2xl border border-slate-200 p-6">
           <h2 className="text-2xl font-semibold text-slate-900">Status</h2>
-          <p className="mt-3">Currently in private testing.</p>
+          <p className="mt-3">
+            Now available as a web app at{" "}
+            <a
+              href="https://matcha.matchsphere.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#5D8A4A] hover:underline"
+            >
+              matcha.matchsphere.ai
+            </a>
+            . Native iOS and Android apps coming soon.
+          </p>
         </section>
 
         <section className="rounded-2xl border border-slate-200 p-6">
