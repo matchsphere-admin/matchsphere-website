@@ -145,13 +145,18 @@ export default function HomePage() {
 
       <section className="mt-8 grid gap-4 rounded-2xl border border-slate-200 p-6 sm:grid-cols-3">
         <div>
-          <h2 className="text-lg font-semibold text-slate-900">Join the Waitlist</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Try Matcha</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Matcha is currently in private testing. Join the waitlist to get early access.
+            Matcha is now available as a web app. Try it today and experience AI-native matchmaking.
           </p>
-          <Link href="/waitlist" className="mt-3 inline-block text-sm text-brand-700 hover:text-brand-900">
-            Join waitlist →
-          </Link>
+          <a
+            href="https://matcha.matchsphere.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-sm text-brand-700 hover:text-brand-900"
+          >
+            Try Matcha →
+          </a>
         </div>
         <div>
           <h2 className="text-lg font-semibold text-slate-900">Partnerships</h2>
