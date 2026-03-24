@@ -73,27 +73,29 @@ export default function HomePage() {
             MatchSphere is designing matchmaking infrastructure where privacy, safety, and compatibility
             are core product decisions, not afterthoughts.
           </p>
-          <div className="flex flex-wrap gap-3 pt-2">
+          <div className="flex flex-col gap-2 pt-2 sm:flex-row sm:flex-wrap sm:gap-3">
             <a
               href="https://matcha.matchsphere.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md bg-[#5D8A4A] px-4 py-2 text-sm font-medium text-white hover:bg-[#4A7039]"
+              className="rounded-md bg-[#5D8A4A] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#4A7039]"
             >
               Try Matcha
             </a>
-            <Link
-              href="/matcha"
-              className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
-            >
-              Learn More
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
-            >
-              Contact Us
-            </Link>
+            <div className="flex gap-2 sm:gap-3">
+              <Link
+                href="/matcha"
+                className="flex-1 rounded-md border border-slate-300 px-4 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-50 sm:flex-none"
+              >
+                Learn More
+              </Link>
+              <Link
+                href="/contact"
+                className="flex-1 rounded-md border border-slate-300 px-4 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-50 sm:flex-none"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
