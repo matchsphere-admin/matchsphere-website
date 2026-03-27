@@ -73,7 +73,7 @@ export default function MatchaPage() {
             <div className="text-center sm:text-left">
               <h2 className="text-xl font-semibold text-slate-900">Try Matcha Today</h2>
               <p className="mt-1 text-sm text-slate-600">
-                Experience AI-native matchmaking. Now available as a web app. Native apps coming soon.
+                Experience AI-native matchmaking. Available on the web and Android. iOS coming soon.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:shrink-0">
@@ -84,6 +84,14 @@ export default function MatchaPage() {
                 className="rounded-lg bg-[#5D8A4A] px-6 py-2.5 text-center text-sm font-medium text-white transition hover:bg-[#4A7039]"
               >
                 Try Matcha Web →
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg bg-[#5D8A4A] px-6 py-2.5 text-center text-sm font-medium text-white transition hover:bg-[#4A7039]"
+              >
+                Android (Google Play) →
               </a>
               <Link
                 href="/waitlist"
@@ -138,8 +146,17 @@ export default function MatchaPage() {
               className="text-[#5D8A4A] hover:underline"
             >
               matcha.matchsphere.ai
+            </a>{" "}
+            and on{" "}
+            <a
+              href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#5D8A4A] hover:underline"
+            >
+              Android (Google Play)
             </a>
-            . Native iOS and Android apps coming soon.
+            . iOS app coming soon.
           </p>
         </section>
 

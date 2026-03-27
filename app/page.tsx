@@ -80,7 +80,15 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="rounded-md bg-[#5D8A4A] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#4A7039]"
             >
-              Try Matcha
+              Try Matcha Web
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-[#5D8A4A] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#4A7039]"
+            >
+              Android (Google Play)
             </a>
             <div className="flex gap-2 sm:gap-3">
               <Link
@@ -149,16 +157,26 @@ export default function HomePage() {
         <div>
           <h2 className="text-lg font-semibold text-slate-900">Try Matcha</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Matcha is now available as a web app. Try it today and experience AI-native matchmaking.
+            Available on the web and Android. Try it today and experience AI-native matchmaking.
           </p>
-          <a
-            href="https://matcha.matchsphere.ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-block text-sm text-brand-700 hover:text-brand-900"
-          >
-            Try Matcha →
-          </a>
+          <div className="mt-3 flex flex-col gap-1.5">
+            <a
+              href="https://matcha.matchsphere.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-sm text-brand-700 hover:text-brand-900"
+            >
+              Matcha Web →
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-sm text-brand-700 hover:text-brand-900"
+            >
+              Android (Google Play) →
+            </a>
+          </div>
         </div>
         <div>
           <h2 className="text-lg font-semibold text-slate-900">Partnerships</h2>
