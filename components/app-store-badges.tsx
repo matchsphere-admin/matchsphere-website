@@ -70,47 +70,33 @@ export function GooglePlayBadge({ className }: { className?: string }) {
   );
 }
 
+const TESTFLIGHT_URL = "https://testflight.apple.com/join/BUMWtu9u";
+
 export function AppStoreBadge({
   className,
-  comingSoon = false,
+  beta = false,
 }: {
   className?: string;
-  comingSoon?: boolean;
+  beta?: boolean;
 }) {
-  const inner = (
-    <>
-      <AppleIcon />
-      <div className="flex flex-col leading-none">
-        <span className="text-[8px] tracking-wide text-white">
-          {comingSoon ? "Coming soon on the" : "Download on the"}
-        </span>
-        <span className="-mt-px text-[15px] font-medium text-white">
-          App Store
-        </span>
-      </div>
-    </>
-  );
-
-  if (comingSoon) {
-    return (
-      <span
-        className={`inline-flex h-[40px] cursor-default items-center justify-center gap-2 rounded-lg border border-[#A6A6A6] bg-black px-3 opacity-50 ${className ?? ""}`}
-        aria-label="Coming soon on the App Store"
-      >
-        {inner}
-      </span>
-    );
-  }
+  const topText = beta ? "Beta on" : "Download on the";
+  const bottomText = beta ? "TestFlight" : "App Store";
 
   return (
     <a
-      href="#"
+      href={beta ? TESTFLIGHT_URL : "#"}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex h-[40px] items-center justify-center gap-2 rounded-lg border border-[#A6A6A6] bg-black px-3 transition-colors hover:bg-neutral-800 ${className ?? ""}`}
-      aria-label="Download on the App Store"
+      aria-label={beta ? "Join the beta on TestFlight" : "Download on the App Store"}
     >
-      {inner}
+      <AppleIcon />
+      <div className="flex flex-col leading-none">
+        <span className="text-[8px] tracking-wide text-white">{topText}</span>
+        <span className="-mt-px text-[15px] font-medium text-white">
+          {bottomText}
+        </span>
+      </div>
     </a>
   );
 }
@@ -127,7 +113,7 @@ export function AppStoreBadges({
       className={`flex gap-2 ${direction === "column" ? "flex-col items-start" : "flex-row items-center"} ${className ?? ""}`}
     >
       <GooglePlayBadge />
-      <AppStoreBadge comingSoon />
+      <AppStoreBadge beta />
     </div>
   );
 }

@@ -134,8 +134,8 @@ export default function HomePage() {
         <div>
           <h2 className="text-lg font-semibold text-slate-900">Try Matcha</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Available on the web and Android. iOS coming soon. Try it today and experience AI-native
-            matchmaking.
+            Available on the web, Android, and iOS (beta via TestFlight). Try it today and experience
+            AI-native matchmaking.
           </p>
           <div className="mt-3 flex flex-col gap-2">
             <a
@@ -148,7 +148,7 @@ export default function HomePage() {
               Matcha Web App →
             </a>
             <GooglePlayBadge />
-            <AppStoreBadge comingSoon />
+            <AppStoreBadge beta />
           </div>
         </div>
         <div>

@@ -74,7 +74,7 @@ export default function MatchaPage() {
             <div className="text-center sm:text-left">
               <h2 className="text-xl font-semibold text-slate-900">Try Matcha Today</h2>
               <p className="mt-1 text-sm text-slate-600">
-                Experience AI-native matchmaking. Available on the web and Android. iOS coming soon.
+                Experience AI-native matchmaking. Available on the web, Android, and iOS (beta via TestFlight).
               </p>
             </div>
             <div className="flex flex-col gap-2 sm:shrink-0">
@@ -88,7 +88,7 @@ export default function MatchaPage() {
                 Matcha Web App →
               </a>
               <GooglePlayBadge />
-              <AppStoreBadge comingSoon />
+              <AppStoreBadge beta />
             </div>
           </div>
         </section>
@@ -146,7 +146,16 @@ export default function MatchaPage() {
             >
               Android (Google Play)
             </a>
-            . iOS app coming soon.
+            . iOS app available in beta via{" "}
+            <a
+              href="https://testflight.apple.com/join/BUMWtu9u"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#5D8A4A] hover:underline"
+            >
+              TestFlight
+            </a>
+            .
           </p>
         </section>
 
