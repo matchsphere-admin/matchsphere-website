@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiteShell } from "@/components/site-shell";
 import { AppScreenshotCarousel } from "@/components/app-screenshot-carousel";
+import { GooglePlayBadge, AppStoreBadge, MatchaIcon } from "@/components/app-store-badges";
 
 const screenshots = [
   {
@@ -70,40 +71,16 @@ export default function HomePage() {
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-slate-900">Built for trust from day one</h2>
           <p className="text-slate-700">
-            MatchSphere is designing matchmaking infrastructure where privacy, safety, and compatibility
+            MatchSphere is designing matchmaking app, Matcha, where privacy, safety, and compatibility
             are core product decisions, not afterthoughts.
           </p>
-          <div className="flex flex-col gap-2 pt-2 sm:flex-row sm:flex-wrap sm:gap-3">
-            <a
-              href="https://matcha.matchsphere.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md bg-[#5D8A4A] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#4A7039]"
+          <div className="flex justify-center sm:justify-start">
+            <Link
+              href="/matcha"
+              className="inline-block rounded-md border border-[#5D8A4A] bg-white px-4 py-2 text-center text-sm font-medium text-[#5D8A4A] hover:bg-[#F5F9F3]"
             >
-              Try Matcha Web
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md bg-[#5D8A4A] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#4A7039]"
-            >
-              Android (Google Play)
-            </a>
-            <div className="flex gap-2 sm:gap-3">
-              <Link
-                href="/matcha"
-                className="flex-1 rounded-md border border-slate-300 px-4 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-50 sm:flex-none"
-              >
-                Learn More
-              </Link>
-              <Link
-                href="/contact"
-                className="flex-1 rounded-md border border-slate-300 px-4 py-2 text-center text-sm font-medium text-slate-700 hover:bg-slate-50 sm:flex-none"
-              >
-                Contact Us
-              </Link>
-            </div>
+              Learn More
+            </Link>
           </div>
         </div>
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
@@ -157,25 +134,21 @@ export default function HomePage() {
         <div>
           <h2 className="text-lg font-semibold text-slate-900">Try Matcha</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Available on the web and Android. Try it today and experience AI-native matchmaking.
+            Available on the web and Android. iOS coming soon. Try it today and experience AI-native
+            matchmaking.
           </p>
-          <div className="mt-3 flex flex-col gap-1.5">
+          <div className="mt-3 flex flex-col gap-2">
             <a
               href="https://matcha.matchsphere.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-sm text-brand-700 hover:text-brand-900"
+              className="inline-flex h-[40px] items-center justify-center gap-2 rounded-lg border border-[#5D8A4A] bg-[#E8F0E4] px-3 text-sm font-medium text-[#5D8A4A] transition hover:bg-[#D8E0D2]"
             >
-              Matcha Web →
+              <MatchaIcon />
+              Matcha Web App →
             </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-sm text-brand-700 hover:text-brand-900"
-            >
-              Android (Google Play) →
-            </a>
+            <GooglePlayBadge />
+            <AppStoreBadge comingSoon />
           </div>
         </div>
         <div>

@@ -1,6 +1,7 @@
 import { SiteShell } from "@/components/site-shell";
 import Link from "next/link";
 import { AppScreenshotCarousel } from "@/components/app-screenshot-carousel";
+import { GooglePlayBadge, AppStoreBadge, MatchaIcon } from "@/components/app-store-badges";
 
 const screenshots = [
   {
@@ -68,7 +69,7 @@ export default function MatchaPage() {
     >
       <div className="space-y-8 text-slate-700">
         {/* Try Matcha Banner */}
-        <section className="rounded-2xl border-2 border-[#5D8A4A] bg-[#E8F0E4] p-6">
+        <section className="rounded-2xl border border-slate-200 p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="text-center sm:text-left">
               <h2 className="text-xl font-semibold text-slate-900">Try Matcha Today</h2>
@@ -76,29 +77,18 @@ export default function MatchaPage() {
                 Experience AI-native matchmaking. Available on the web and Android. iOS coming soon.
               </p>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row sm:shrink-0">
+            <div className="flex flex-col gap-2 sm:shrink-0">
               <a
                 href="https://matcha.matchsphere.ai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg bg-[#5D8A4A] px-6 py-2.5 text-center text-sm font-medium text-white transition hover:bg-[#4A7039]"
+                className="inline-flex h-[40px] items-center justify-center gap-2 rounded-lg border border-[#5D8A4A] bg-[#E8F0E4] px-6 text-sm font-medium text-[#5D8A4A] transition hover:bg-[#D8E0D2]"
               >
-                Try Matcha Web →
+                <MatchaIcon />
+                Matcha Web App →
               </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=ai.matchsphere.matcha"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg bg-[#5D8A4A] px-6 py-2.5 text-center text-sm font-medium text-white transition hover:bg-[#4A7039]"
-              >
-                Android (Google Play) →
-              </a>
-              <Link
-                href="/waitlist"
-                className="rounded-lg border border-[#5D8A4A] bg-white px-6 py-2.5 text-center text-sm font-medium text-[#5D8A4A] transition hover:bg-[#F5F9F3]"
-              >
-                Join Waitlist
-              </Link>
+              <GooglePlayBadge />
+              <AppStoreBadge comingSoon />
             </div>
           </div>
         </section>
@@ -166,10 +156,10 @@ export default function MatchaPage() {
             Interested in early access, partnerships, or investor conversations? We&apos;d love to hear
             from you.
           </p>
-          <div className="mt-4">
+          <div className="mt-4 flex justify-center sm:justify-start">
             <Link
               href="/contact"
-              className="inline-block rounded-md bg-[#5D8A4A] px-4 py-2 text-sm font-medium text-white hover:bg-[#4A7039]"
+              className="inline-block rounded-md border border-[#5D8A4A] bg-white px-4 py-2 text-sm font-medium text-[#5D8A4A] hover:bg-[#F5F9F3]"
             >
               Contact Us
             </Link>
