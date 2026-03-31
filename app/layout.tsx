@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description:
     "MatchSphere is building Matcha, an AI-powered matchmaking platform for dating, friendship, and couple friendship.",
   metadataBase: new URL("https://matchsphere.ai"),
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   alternates: {
     canonical: "/",
   },
