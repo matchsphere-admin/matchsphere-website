@@ -4,12 +4,28 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const host = request.headers.get("host") || "";
+  const pathname = url.pathname;
+  const isLegacyAuthPath = new Set([
+    "/login",
+    "/signup",
+    "/forgot_password",
+    "/forgot-password",
+  ]).has(pathname);
+  const isNonCanonicalHost = host.startsWith("www.");
+  const isDotPath = pathname === "/.";
 
-  // Redirect www to non-www
-  if (host.startsWith("www.")) {
-    const newHost = host.replace("www.", "");
-    url.host = newHost;
-    return NextResponse.redirect(url, 301);
+  // Consolidate to a single-hop canonical redirect for legacy auth routes
+  // and non-canonical host/path variants.
+  if (isLegacyAuthPath || isNonCanonicalHost || isDotPath) {
+    const redirectUrl = new URL("https://matchsphere.ai/");
+    if (!isLegacyAuthPath) {
+      redirectUrl.pathname = isDotPath ? "/" : pathname;
+      redirectUrl.search = url.search;
+    }
+
+    const response = NextResponse.redirect(redirectUrl, 301);
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    return response;
   }
 
   return NextResponse.next();
