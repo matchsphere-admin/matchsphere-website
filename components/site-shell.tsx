@@ -4,17 +4,11 @@ import { ReactNode } from "react";
 
 const headerLinks = [
   { href: "/", label: "Home" },
-  { href: "/matcha", label: "Matcha" },
-  { href: "/safety", label: "Safety" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
-const footerLinks = [
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-of-use", label: "Terms of Use" },
-  { href: "/delete-account", label: "Delete Account" },
-];
+const footerLinks: { href: string; label: string }[] = [];
 
 export function SiteShell({
   title,

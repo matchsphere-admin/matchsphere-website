@@ -22,15 +22,15 @@ export default function AboutPage() {
   return (
     <SiteShell
       title="About MatchSphere"
-      subtitle="A company building AI-native matchmaking systems focused on meaningful connection, privacy, and trust."
+      subtitle="We build AI-driven lead-generation systems for real estate, starting with Dubai and UAE off-plan developers."
     >
       <article className="space-y-8 text-slate-700">
         <section className="rounded-2xl border border-slate-200 p-6">
           <h2 className="text-2xl font-semibold text-slate-900">Company</h2>
           <p className="mt-3">
-            MatchSphere is the company behind Matcha, an AI-powered matchmaking app for dating,
-            friendship, and couple-to-couple socializing. We focus on compatibility, intent, and
-            safety rather than superficial engagement mechanics.
+            MatchSphere builds AI-driven onboarding and lead-qualification tools for property
+            developers. We help small and mid-size developers in the Dubai and UAE off-plan market turn
+            raw interest into qualified, sales-ready conversations.
           </p>
           <div className="mt-4">
             <Link
@@ -46,16 +46,16 @@ export default function AboutPage() {
         </section>
 
         <section className="rounded-2xl border border-slate-200 p-6">
-          <h2 className="text-2xl font-semibold text-slate-900">Founder & CEO</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Founder &amp; CEO</h2>
           <p className="mt-3">
-            Founded by Jay Alikhani, a former Amazon engineer specializing in large language models
-            and personalization systems, MatchSphere was created to rethink how technology supports
-            meaningful relationships.
+            Founded by Jay Alikhani, a former Amazon engineer specializing in large language models and
+            personalization systems, MatchSphere was created to apply modern AI to real, commercial
+            problems.
           </p>
           <p className="mt-3">
-            The mission is shaped by direct experience with how existing matchmaking products can miss
-            privacy expectations, compatibility depth, and cultural context for users in the UAE and
-            GCC.
+            MatchSphere brings that experience in personalization and large language models to a
+            concrete challenge in real estate: helping developers identify and engage the buyers most
+            likely to commit.
           </p>
           <div className="mt-4">
             <Link
@@ -73,8 +73,9 @@ export default function AboutPage() {
         <section className="rounded-2xl border border-slate-200 p-6">
           <h2 className="text-2xl font-semibold text-slate-900">Mission</h2>
           <p className="mt-3">
-            We believe matchmaking can be intelligent, private, and culturally aware. MatchSphere is
-            building systems that prioritize trust, safety, and long-term relationship outcomes.
+            We believe lead generation can be intelligent and respectful of the buyer&apos;s time.
+            MatchSphere builds systems that surface genuine intent and connect developers with the right
+            buyers, faster.
           </p>
         </section>
       </article>

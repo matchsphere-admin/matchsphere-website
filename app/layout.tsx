@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | MatchSphere",
   },
   description:
-    "MatchSphere is building Matcha, an AI-powered matchmaking platform for dating, friendship, and couple friendship.",
+    "MatchSphere is an AI-driven lead-generation platform for the Dubai and UAE off-plan real estate market, helping property developers connect with qualified, intent-rich buyers through AI-guided onboarding.",
   metadataBase: new URL("https://matchsphere.ai"),
   icons: {
     icon: "/icon.png",

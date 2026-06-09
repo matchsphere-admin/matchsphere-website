@@ -1,6 +1,6 @@
 # MatchSphere Website
 
-Phase 1 company website for MatchSphere and Matcha, built with Next.js.
+Company website for MatchSphere — an AI-driven lead-generation platform for the Dubai/UAE off-plan real estate market. Built with Next.js.
 
 ## Stack
 
@@ -24,21 +24,13 @@ npm run build
 npm run start
 ```
 
-## Routes (MVP)
+## Routes
 
-- `/`
-- `/matcha`
-- `/privacy-policy`
-- `/terms-of-use`
-- `/delete-account`
-- `/contact`
-- `/about` (placeholder)
-- `/support` (placeholder)
+- `/` — Home
+- `/about` — About
+- `/contact` — Contact / request a demo (Resend-backed form)
 
-Current MVP status:
-- Done: `/contact`, `/privacy-policy`, `/terms-of-use`, `/delete-account`
-- In progress: `/`, `/matcha`
-- Placeholder: `/about`, `/support`
+The previous Matcha site (product page, safety, privacy policy, terms of use, delete account, support, waitlist) was archived to the `matchsphere-website-v1` repo and removed here during the proptech pivot.
 
 ## Environment
 
